@@ -9,4 +9,12 @@ nginx.conf
 scratch
 .vscode
 .idea
-*.mp4
+**/*.mp4
+**/Thumbs.db
+**/*.avi
+**/*.mov
+**/*.mkv
+.git
+.gitignore
+.vscode
+.idea
