@@ -44,10 +44,7 @@ const TeamPage = () => {
       <div className="team-page-list">
         {teamMembers.map((member, index) => (
           <div key={member.id} className="team-page-row">
-            {/* 1. Large Index Number */}
-            <div className="team-page-row-index">
-              {(index + 1).toString().padStart(2, '0')}
-            </div>
+
 
             {/* 2. Name & Designation */}
             <div className="team-page-row-meta">

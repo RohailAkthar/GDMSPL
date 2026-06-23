@@ -64,11 +64,11 @@ const Hero = () => {
         >
           <div className="branding-container">
             <h1 className="brand-primary aurora-text">
-              GEOmetric
+              Geometric
             </h1>
             <div className="brand-secondary-well">
               <p className="brand-secondary">
-                Design Management
+                Design Management Services Pvt Ltd
               </p>
             </div>
           </div>

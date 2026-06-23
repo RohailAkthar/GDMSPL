@@ -131,13 +131,15 @@ const Careers = ({ embedded = false }) => {
 
   return (
     <div className={`careers-page ${embedded ? 'careers-embedded' : ''}`} id="career">
-      <section className="careers-hero">
-        <img src={heroImg} alt="Collaborative Studio" className="hero-bg" />
-        <div className="hero-content">
-          <div className="label">Careers</div>
-          <p>Join a collective of visionaries redefining the architectural landscape.</p>
-        </div>
-      </section>
+      {!embedded && (
+        <section className="careers-hero">
+          <img src={heroImg} alt="Collaborative Studio" className="hero-bg" />
+          <div className="hero-content">
+            <div className="label">Careers</div>
+            <p>Join a collective of visionaries redefining the architectural landscape.</p>
+          </div>
+        </section>
+      )}
 
       <section className="careers-categories" ref={categoriesRef}>
         <div className="section-header">

@@ -1,7 +1,7 @@
 .hero-scroll-container {
   position: relative;
-  height: 150vh;
-  /* Captures 150% of viewport height as vertical scroll for the branding animation */
+  height: 300vh;
+  /* Captures 300% of viewport height as vertical scroll for the branding animation */
   background: var(--color-bg-primary);
 }
 
@@ -39,8 +39,8 @@
   width: 100%;
   height: 100%;
   background: radial-gradient(circle at center,
-      rgba(252, 252, 249, 0) 0%,
-      rgba(252, 252, 249, 0.6) 100%);
+      rgba(252, 252, 249, 0.1) 0%,
+      rgba(252, 252, 249, 0.3) 100%);
 }
 
 .hero-content {
@@ -60,38 +60,50 @@
 
 /* Rest of the styles (branding-primary, aurora-text, etc.) remain as they were */
 .brand-primary {
-  font-size: 16vw !important; /* Force true full screen width */
-  font-weight: 900;
-  line-height: 1;
+  font-size: 12.8vw !important;
+  /* Reduced by 20% from 16vw */
+  font-weight: 300 !important;
+  /* Lighter weight for architectural elegance */
+  line-height: 1.1;
   text-transform: uppercase;
-  letter-spacing: -0.04em !important;
+  letter-spacing: 0.05em !important;
+  /* Spaced out and elegant */
   margin: 0;
   white-space: nowrap;
 }
 
 .brand-secondary-well {
-  width: 100%; /* Allow it to span naturally */
+  width: 100%;
+  /* Allow it to span naturally */
 }
 
 .brand-secondary {
-  font-size: 3vw !important; /* Scale relative to exactly the viewport width */
-  font-weight: 500 !important;
-  letter-spacing: 1.5vw !important; /* Extremely wide tracking to match architectural aesthetic */
+  font-size: 2.4vw !important;
+  /* Reduced by 20% from 3vw */
+  font-weight: 400 !important;
+  letter-spacing: 0.4vw !important;
+  /* Adjusted tracking so the full name doesn't overflow */
   text-transform: uppercase !important;
   color: rgba(255, 255, 255, 0.9) !important;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6) !important;
-  margin-top: 2vw !important; /* Give it some breathing room from the massive text */
+  margin-top: 1.5vw !important;
+  /* Give it some breathing room from the massive text */
   margin-bottom: 0 !important;
   white-space: nowrap !important;
 }
 
 .aurora-text {
   background: linear-gradient(to right,
-      #4c0000, /* Logo Deep Red */
-      #787878, /* Logo Mid Grey */
-      #cbcbcb, /* Logo Light Grey */
-      #8b0000, /* Accent Red */
-      #2d2d2d, /* Logo Dark Charcoal */
+      #4c0000,
+      /* Logo Deep Red */
+      #787878,
+      /* Logo Mid Grey */
+      #cbcbcb,
+      /* Logo Light Grey */
+      #8b0000,
+      /* Accent Red */
+      #2d2d2d,
+      /* Logo Dark Charcoal */
       #4c0000);
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -119,7 +131,14 @@
 
 @media (max-width: 768px) {
   .brand-primary {
-    font-size: 19vw; /* Slightly bumped on mobile to touch edges perfectly */
-    letter-spacing: -0.04em;
+    font-size: 15vw !important;
+    /* Reduced by 20% from 19vw */
+    letter-spacing: 0.05em !important;
+  }
+
+  .brand-secondary {
+    font-size: 3.5vw !important;
+    /* Scaled up for mobile readability */
+    letter-spacing: 0.5vw !important;
   }
 }

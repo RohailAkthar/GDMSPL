@@ -12,12 +12,12 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const projectsSection = document.getElementById('projects');
-      if (projectsSection) {
-        // Show the menu when the top of the projects section is near the viewport top
-        setIsScrolled(projectsSection.getBoundingClientRect().top <= 100);
+      const isHomepage = location.pathname === '/';
+      if (isHomepage) {
+        // Show navbar once the landing section scrolling is complete (2.0 viewport heights scrolled)
+        setIsScrolled(window.scrollY > window.innerHeight * 2.0);
       } else {
-        // Fallback if not on the homepage or if projects section isn't found
+        // Fallback for subpages
         setIsScrolled(window.scrollY > 20);
       }
     };
@@ -25,7 +25,7 @@ const Header = () => {
     // Call it once on mount to set the initial state
     handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   const handleNavClick = (id) => {
     setIsMenuOpen(false);
@@ -38,6 +38,12 @@ const Header = () => {
       }
     }
   };
+
+  const isHomepage = location.pathname === '/';
+
+  if (isHomepage && !isScrolled) {
+    return null;
+  }
 
   return (
     <header className={`header ${isScrolled ? 'scrolled glass' : ''}`}>

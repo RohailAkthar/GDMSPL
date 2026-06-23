@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './layouts/Header/Header';
 import Footer from './layouts/Footer/Footer';
-import Hero from './pages/Home/Hero';
+import GdmSplatLanding from './pages/Home/GdmSplatLanding';
 import Projects from './pages/Home/Projects';
 import About from './pages/Home/About';
 import Services from './pages/Home/Services';
@@ -17,7 +17,7 @@ import ScrollToHashElement from './components/ScrollToHashElement';
 function Home() {
   return (
     <>
-      <Hero />
+      <GdmSplatLanding />
       <Projects />
       <About />
       <Services />

@@ -15,23 +15,22 @@
   text-align: left;
 }
 
-.team-header .subtitle {
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
-  letter-spacing: 4px;
-  color: #888;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  display: block;
-}
-
-.team-header h2 {
+.team-title {
   font-family: 'Outfit', sans-serif;
-  font-size: clamp(3rem, 6vw, 4.5rem);
-  font-weight: 300;
-  line-height: 1.1;
+  font-size: clamp(2rem, 4.5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
   color: #1a1a1a;
   margin: 0;
+}
+
+.team-title-sub {
+  display: block;
+  font-size: clamp(1.5rem, 3.2vw, 2.5rem);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-top: var(--spacing-2);
 }
 
 .team-grid {

@@ -12,9 +12,9 @@ const Contact = () => {
 
     const locationDetails = {
         "Delhi": {
-            office: "Plot No. 45, Sector 18, Gurugram, India",
-            phone: "+91 98765 43210",
-            email: "info@gdmspl.com",
+            office: "A-58/8, top floor, Vishwakarma colony, MB road ,110044-New Delhi, India",
+            phone: "+91 11 41025657",
+            email: "mail@gdmspl.com",
             website: "www.gdmspl.com"
         },
         "Mumbai": {
@@ -139,7 +139,7 @@ const Contact = () => {
                             <div className="detail-item">
                                 <div className="icon-box"><MapPin size={20} /></div>
                                 <div>
-                                    <h3>Our Office</h3>
+                                    <h3>{selectedLocation} Office</h3>
                                     <p>{currentDetails.office}</p>
                                 </div>
                             </div>

@@ -32,8 +32,10 @@ const Team = () => {
     <section id="team" className="team-section">
       <div className="team-container">
         <header className="team-header">
-          <span className="subtitle">THE COLLECTIVE</span>
-          <h2>The Team Behind <br />The Vision</h2>
+          <h2 className="team-title">
+            The Team Behind<br />
+            <span className="team-title-sub">The Vision</span>
+          </h2>
         </header>
 
         <div className="team-grid">
@@ -57,26 +59,7 @@ const Team = () => {
           </div>
         )}
 
-        <footer className="team-footer">
-          <div className="team-stats">
-            <div className="stat-item">
-              <h3>35+</h3>
-              <p>Years of Experience</p>
-            </div>
-            <div className="stat-item">
-              <h3>150+</h3>
-              <p>Landmark Projects</p>
-            </div>
-            <div className="stat-item">
-              <h3>50+</h3>
-              <p>Creative Minds</p>
-            </div>
-            <div className="stat-item">
-              <h3>4</h3>
-              <p>Regional Offices</p>
-            </div>
-          </div>
-        </footer>
+
       </div>
 
       {/* Elegant Bio Modal Popup (Lightbox) */}

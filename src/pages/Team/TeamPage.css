@@ -59,7 +59,7 @@
 
 .team-page-row {
   display: grid;
-  grid-template-columns: 80px 250px 220px 1fr;
+  grid-template-columns: 250px 220px 1fr;
   gap: 40px;
   align-items: center;
   padding: 50px 0;
@@ -78,13 +78,7 @@
   background-color: #f6f6f6;
 }
 
-/* Giant thin Index Number */
-.team-page-row-index {
-  font-family: 'Outfit', sans-serif;
-  font-size: 40px;
-  font-weight: 200;
-  color: #999;
-}
+
 
 /* Name and Role column */
 .team-page-row-meta {
@@ -154,7 +148,7 @@
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .team-page-row {
-    grid-template-columns: 60px 200px 150px 1fr;
+    grid-template-columns: 200px 150px 1fr;
     gap: 25px;
   }
   

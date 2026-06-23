@@ -16,15 +16,6 @@
   margin-bottom: 80px; /* Increased space after 'experience' title */
 }
 
-.about-kicker {
-  display: block;
-  font-size: var(--font-size-sm);
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: var(--color-accent-primary);
-  margin-bottom: var(--spacing-4);
-}
 
 .about-title {
   font-size: clamp(2rem, 4.5vw, 3.5rem);

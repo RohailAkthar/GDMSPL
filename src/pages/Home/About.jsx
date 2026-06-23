@@ -24,7 +24,6 @@ const About = () => {
     <section id="about" className="about-section">
       <div className="container about-container">
         <div className="about-header">
-          <span className="about-kicker">Est. 1989</span>
           <h2 className="about-title">
             Designing with clarity.<br />
             <span className="about-title-sub">Building with purpose.</span>
